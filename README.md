@@ -1,10 +1,10 @@
-# 📝 API RESTful de Notas (Laravel)
+API RESTful de Notas
 
-Este proyecto es una API RESTful desarrollada en Laravel para gestionar notas. Permite crear, listar, visualizar y eliminar notas utilizando endpoints simples.
+Este es un repositorio con la solucion de una Prueba de Creacion de API RESTful de notas basico
 
 ---
 
-## 🔧 Instalación del proyecto
+Pasos a seguir para instalacion del proyecto
 
 1. Clona el repositorio:
 
@@ -31,35 +31,34 @@ DB_DATABASE=./database/database.sqlite
 
 ---
 
-## 📦 Ejecutar migraciones
+Ejecucion de migraciones
 
-Para crear las tablas necesarias en la base de datos:
+Para creacion de tablas necesarias en la base de datos:
 
 php artisan migrate
 
 ---
 
-## ✅ Ejecutar los tests
+Ejecutar los tests
 
-Para correr los tests definidos en el proyecto:
+Para ejecutar los tests del proyecto
 
 php artisan test
 
 ---
 
-## 🚀 Ejecutar el servidor local
+Ejecutar el servidor local
 
-Para iniciar el servidor de desarrollo de Laravel:
+Para iniciar el servidor de Laravel:
 
 php artisan serve
-
-Accede a tu API en:
+Accedeso a la API ingresando en el navegador lo siguiente:
 
 http://127.0.0.1:8000
 
 ---
 
-## 📌 Endpoints disponibles
+Endpoints disponibles
 
 | Método | Ruta              |
 |--------|-------------------|
@@ -70,31 +69,31 @@ http://127.0.0.1:8000
 
 ---
 
-## 🧪 Ejemplos con PowerShell (Invoke-RestMethod)
+Comandos con PowerShell para ejecutar los Endpoints en consola
 
-### Crear una nota
+# Crear una nota
 Invoke-RestMethod -Uri "http://127.0.0.1:8000/api/notes" `
   -Method POST `
   -Headers @{ "Accept" = "application/json" } `
   -ContentType "application/json" `
   -Body '{ "title": "Mi primera nota", "content": "Contenido de ejemplo" }'
 
-### Listar todas las notas
+# Listar todas las notas
 Invoke-RestMethod -Uri "http://127.0.0.1:8000/api/notes" `
   -Method GET `
   -Headers @{ "Accept" = "application/json" }
 
-### Ver una nota específica
+# Ver una nota específica
 Invoke-RestMethod -Uri "http://127.0.0.1:8000/api/notes/1"
 
-### Eliminar una nota
+# Eliminar una nota
 Invoke-RestMethod -Uri "http://127.0.0.1:8000/api/notes/1" `
   -Method DELETE `
   -Headers @{ "Accept" = "application/json" }
 
 ---
 
-## 🛠 Requisitos
+Requisitos para clonar el proyecto
 
 - PHP ≥ 8.1
 - Composer
@@ -104,6 +103,6 @@ Invoke-RestMethod -Uri "http://127.0.0.1:8000/api/notes/1" `
 
 ---
 
-## 🧑‍💻 Autor
+Autor de este proyecto
 
-Desarrollado por Benjamín Vega Hernández
+Benjamín Vega Hernández
